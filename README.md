@@ -8,12 +8,13 @@ Como editar
 1.Escolha o Arquivo que será modificado com inclusão ou exclusão de item;
 
 
+2. Carregar Arquivo
 
-2.preencha os campos - veja os exemplos ao passar o cursor no título dos campos
+3.preencha os campos - veja os exemplos ao passar o cursor no título dos campos
 
 
 
-3.Adicionar ou sibstituir.
+4.Adicionar ou sibstituir.
 
 
 
@@ -23,7 +24,7 @@ para adicionar, certifique-se de que o ID não esteja sendo usado, você pode co
 
 
 
-4. Salvar JSON
+5. Salvar JSON
 
 
 
@@ -31,7 +32,7 @@ Confirme o nome com OK ou altere para gerar o novo Arquivo do seu MENU
 
 
 
-5. Para Alterar o  Item do menu, clique em Editar na lateral do item. O sistema vai carregar e preencher os campos para alteração que desejar.
+6. Para Alterar o  Item do menu, clique em Editar na lateral do item. O sistema vai carregar e preencher os campos para alteração que desejar.
 
 
 
