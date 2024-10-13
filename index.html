@@ -3,51 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instruções para Editar</title>
+    <title>Guia de Instruções: M.A.E. Menu Editor (Versão 1.9)</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
             padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
         }
         h1 {
-            color: #333;
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
         }
         ol {
-            margin: 20px 0;
+            padding-left: 20px;
         }
         li {
-            margin: 10px 0;
+            margin-bottom: 10px;
         }
-        .atencao {
-            color: red;
-            font-weight: bold;
+        .tip {
+            background-color: #f0f8ff;
+            border-left: 5px solid #3498db;
+            padding: 10px;
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
-    <h1>Instruções Menu Editor v 1.8</h1>
+    <h1>Guia de Instruções: M.A.E. Menu Editor (Versão 1.9)</h1>
+
+    <h2>1. Visão Geral</h2>
+    <p>O M.A.E. Menu Editor é uma ferramenta para criar e editar menus em formato JSON. Ele permite adicionar, editar, reordenar e excluir itens de menu, além de importar e exportar os dados em arquivos JSON.</p>
+
+    <h2>2. Carregando um Arquivo JSON Existente</h2>
     <ol>
-        <li>Escolha o arquivo que será modificado com inclusão ou exclusão de item;</li>
-        <li>Carregar Arquivo;</li>
-        <li>Preencha os campos - veja os exemplos ao passar o cursor no título dos campos;</li>
-        <li>
-            Adicionar ou substituir.
+        <li>Clique no botão "Escolher arquivo" para selecionar um arquivo JSON.</li>
+        <li>Após selecionar o arquivo, clique em "Carregar JSON".</li>
+        <li>Se o carregamento for bem-sucedido, os itens do menu aparecerão na seção "Resultado".</li>
+    </ol>
+
+    <h2>3. Adicionando um Novo Item ao Menu</h2>
+    <ol>
+        <li>Preencha os campos:
             <ul>
-                <li>Para adicionar, certifique-se de que o ID não esteja sendo usado. Você pode colocar quantos sufixos quiser (ex: mae-menu-editor-teste-2).</li>
+                <li>ID: Identificador único para o item (ex: "mae-start")</li>
+                <li>Categoria: Categoria do item (ex: "M.A.E.")</li>
+                <li>Assunto: Título do item (ex: "Início do Curso")</li>
+                <li>Descrição: Detalhes sobre o item</li>
+                <li>URL: Link associado ao item</li>
             </ul>
         </li>
-        <li>Salvar JSON.</li>
-        <li>Confirme o nome com OK ou altere para gerar o novo arquivo do seu MENU.</li>
-        <li>
-            Para alterar o item do menu, clique em Editar na lateral do item. O sistema vai carregar e preencher os campos para alteração que desejar.
-        </li>
+        <li>Certifique-se de que "Adicionar" está selecionado no campo "Ação".</li>
+        <li>Clique em "Adicionar/Modificar".</li>
     </ol>
-    <p class="atencao">ATENÇÃO: Sempre o item inserido ficará o último item da categoria.</p>
-    <p>Para alterar a ordem, somente editando diretamente no arquivo JSON. Faça isso com cuidado em uma cópia de segurança.</p>
+
+    <h2>4. Editando um Item Existente</h2>
+    <ol>
+        <li>Clique no botão "Editar" ao lado do item que deseja modificar.</li>
+        <li>Os campos serão preenchidos com as informações do item.</li>
+        <li>Faça as alterações necessárias.</li>
+        <li>Certifique-se de que "Substituir" está selecionado no campo "Ação".</li>
+        <li>Clique em "Adicionar/Modificar" para salvar as alterações.</li>
+    </ol>
+
+    <h2>5. Excluindo um Item</h2>
+    <ol>
+        <li>Clique no botão "Deletar" ao lado do item que deseja remover.</li>
+        <li>Confirme a exclusão na caixa de diálogo que aparecerá.</li>
+    </ol>
+
+    <h2>6. Reordenando Itens</h2>
+    <ol>
+        <li>Clique no botão "Ativar Reordenação".</li>
+        <li>Arraste e solte os itens na ordem desejada.</li>
+        <li>Clique em "Desativar Reordenação" quando terminar.</li>
+    </ol>
+
+    <h2>7. Salvando o Menu</h2>
+    <ol>
+        <li>Após fazer todas as alterações desejadas, clique no botão "Salvar JSON".</li>
+        <li>Digite um nome para o arquivo (sem a extensão .json) quando solicitado.</li>
+        <li>O arquivo será baixado automaticamente.</li>
+    </ol>
+
+    <h2>8. Copiando o Nome do Arquivo Carregado</h2>
+    <ol>
+        <li>Após carregar um arquivo JSON, um botão "Clique para Copiar Nome do Arquivo" aparecerá.</li>
+        <li>Clique neste botão para copiar o nome do arquivo para a área de transferência.</li>
+    </ol>
+
+    <h2>9. Abrindo as Instruções</h2>
+    <p>A qualquer momento, você pode clicar no botão "Abrir Instruções" para acessar um guia detalhado de uso.</p>
+
+    <div class="tip">
+        <h3>Dicas Adicionais</h3>
+        <ul>
+            <li>Certifique-se de preencher todos os campos ao adicionar ou editar um item.</li>
+            <li>O ID de cada item deve ser único. Se tentar adicionar um item com um ID já existente, você receberá um alerta.</li>
+            <li>A reordenação dos itens é salva automaticamente, mas lembre-se de clicar em "Salvar JSON" para baixar o arquivo atualizado.</li>
+            <li>Sempre verifique se os dados estão corretos antes de salvar o arquivo JSON.</li>
+        </ul>
+    </div>
 </body>
 </html>
